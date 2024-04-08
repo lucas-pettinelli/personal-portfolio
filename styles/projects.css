@@ -1,0 +1,115 @@
+.navbar {
+    position: relative;
+    display: flex;
+    padding: 0.6rem;
+    background-color: #fff;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-items ul li {
+    position: relative;
+    display: inline;
+    list-style: none;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 200ms;
+}
+
+.nav-items ul li:hover {
+    background-color: #f1eded;
+}
+
+.nav-items ul li a {
+    color: #010101;
+    text-decoration: none;
+}
+
+.nav-logo a,
+.nav-button a {
+    color: #010101;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+}
+
+.nav-logo {
+    display: flex;
+    flex-direction: row;
+    font-size: 32px;
+    font-weight: 600;
+    color: #262727;
+}
+
+.nav-point {
+    font-weight: 900;
+    color: #FC491D;
+}
+
+.nav-button {
+    background-color: #fff;
+    border-radius: 4px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .1) 0 6px 20px;
+    transition: box-shadow .2s, -webkit-box-shadow .2s;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: all 200ms;
+}
+
+.nav-button:hover {
+    box-shadow: #121212 0 0 0 2px, transparent 0 0 0 0;
+}
+
+.nav-button a {
+    display: block;
+    padding: 0.6rem 20px;
+    color: #010101;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+hr {
+    margin: 0 9.5rem;
+}
+
+#hamburger-menu,
+#mobile-menu {
+    display: none;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.card {
+    width: 370px;
+    height: 700px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 340px;
+    height: 650px;
+    object-fit: fill;
+    image-rendering: auto;
+    border-radius: 5px;
+}
