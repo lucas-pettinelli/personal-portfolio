@@ -12,41 +12,19 @@
 <body>
     <nav class="navbar">
         <div class="nav-logo">
-            <a href="#">Lucas Pettinelli</a><span class="nav-point">.</span>
+            <a href="#">LucasPettinelli<span class="point">.</span> </a>
         </div>
-
         <div class="nav-items">
             <ul>
-                <li><a href="#"> Home </a></li>
-                <li><a download href="./assets/doc/_CURRICULO_LUCAS_WILLIAM_PETTINELLI_.pdf"> Curriculum </a></li>
-                <li><a href="#"> About </a></li>
-                <li><a href="#"> Services </a></li>
-                <li><a href="#"> Technologies </a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="./assets/doc/_CURRICULO_LUCAS_WILLIAM_PETTINELLI_.pdf" download>Curriculum</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Technologies</a></li>
             </ul>
         </div>
-
-        <div class="nav-button">
-            <a target="_blank" href="https://wa.me/5551993631423">Let's chat</a>
-        </div>
-
-        <div id="hamburger-menu">&#9776;</div>
-        </div>
-
-        <div id="mobile-menu">
-            <div class="mobile-nav-items">
-                <ul>
-                    <li><a href="#"> Home </a></li>
-                    <li><a href="#"> Curriculum </a></li>
-                    <li><a href="#"> About </a></li>
-                    <li><a href="#"> Services </a></li>
-                    <li><a href="#"> Technologies </a></li>
-                </ul>
-            </div>
-            <div class="mobile-nav-button">
-                <div class="anim-layer"></div>
-                <a href="#">Let's chat</a>
-            </div>
-            <div id="hamburger-cross">&#10006;</div>
+        <div class="nav-toggle">
+            <button onclick="toggleMenu()"><i class="fa-solid fa-ellipsis-vertical"></i></button>
         </div>
     </nav>
 
@@ -58,10 +36,10 @@
             <p class="description-personal">Desenvolvedor fullstack e estudante de Engenharia de Software, motivado pela
                 paixão por tecnologia e criatividades</p>
             <div class="left-content-buttons">
-                <button class="hire-button"> <span class="text">Contrate-me</span></button>
+                <button class="hire-button"> <span class="text">Contratar</span></button>
                 <button class="projects-button"><i class="fa-solid fa-terminal"></i>
                     <a href="./pages/projects.html">Projetos</a>
-                     </button>
+                </button>
             </div>
 
             <div class="info-content">
@@ -72,8 +50,6 @@
                     <h2>118</h2>
                     <p>Lorem, ipsum dolor.</p>
                 </div>
-
-                <span class="spacing-infos"></span>
 
                 <div class="info-content-email">
                     <h2>Contact</h2>
@@ -116,6 +92,7 @@
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer>
@@ -156,5 +133,11 @@
     </footer>
 
 </body>
+
+<script>
+    function toggleMenu() {
+        document.querySelector('.nav-items ul').classList.toggle('active');
+    }
+</script>
 
 </html>
