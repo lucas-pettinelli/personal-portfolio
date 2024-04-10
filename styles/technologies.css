@@ -1,0 +1,113 @@
+/*essa parte é de technologies*/
+
+.title-main {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main-stacks {
+    padding: 10px;
+    background-color: whitesmoke;
+    margin: 0 20px;
+}
+
+.left-stacks {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid purple;
+    margin: 10px 0;
+    height: auto;
+    max-height: auto;
+}
+
+.right-stacks {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid blue;
+    height: auto;
+    max-height: auto;
+}
+
+.stacks-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid green;
+}
+
+.stacks-content img {
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+}
+
+.stacks-description {
+    padding: 10px 10px;
+    width: 100%;
+    flex-direction: row;
+    border: 1px solid saddlebrown;
+}
+
+.stacks-description p {
+    margin-top: 20px;
+}
+
+.habilities-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.habilities-content h3 {
+    margin-right: 10px;
+}
+
+.logo-span,
+.hability-span {
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.logo-span {
+    background-color: rgb(158, 158, 158);
+}
+
+.hability-span {
+    background-color: aqua;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.basic{
+    background-color: blue;
+}
+.intermediate{
+    background-color: palevioletred;
+}
+
+@media screen and (max-width: 768px) {
+    .left-stacks {
+        width: auto;
+        height: auto;
+    }
+
+    .right-stacks {
+        width: auto;
+        height: 200px;
+    }
+
+    .stacks-content {
+        width: auto;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .stacks-content img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

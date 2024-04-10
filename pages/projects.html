@@ -1,70 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/projects.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../js/toggleMenu.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Lucas Pettinelli - Projects</title>
 </head>
+
 <body>
     <nav class="navbar">
         <div class="nav-logo">
-            <a href="#">Lucas Pettinelli</a><span class="nav-point">.</span>
+            <a href="#">Lucas Pettinelli<span class="point">.</span> </a>
         </div>
-
         <div class="nav-items">
             <ul>
-                <li><a href="#"> Home </a></li>
-                <li><a download href="./assets/doc/_CURRICULO_LUCAS_WILLIAM_PETTINELLI_.pdf"> Curriculum </a></li>
-                <li><a href="#"> About </a></li>
-                <li><a href="#"> Services </a></li>
-                <li><a href="#"> Technologies </a></li>
+                <li><a onclick="window.location.href = '../home.html'">Home</a></li>
+                <li><a href="./assets/doc/_CURRICULO_LUCAS_WILLIAM_PETTINELLI_.pdf" download>Curriculum</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a onclick="window.location.href = '../pages/technologies.html'">Technologies</a></li>
             </ul>
         </div>
-
-        <div class="nav-button">
-            <a target="_blank" href="https://wa.me/5551993631423">Let's chat</a>
-        </div>
-
-        <div id="hamburger-menu">&#9776;</div>
-        </div>
-
-        <div id="mobile-menu">
-            <div class="mobile-nav-items">
-                <ul>
-                    <li><a href="#"> Home </a></li>
-                    <li><a href="#"> Curriculum </a></li>
-                    <li><a href="#"> About </a></li>
-                    <li><a href="#"> Services </a></li>
-                    <li><a href="#"> Technologies </a></li>
-                </ul>
-            </div>
-            <div class="mobile-nav-button">
-                <div class="anim-layer"></div>
-                <a href="#">Let's chat</a>
-            </div>
-            <div id="hamburger-cross">&#10006;</div>
+        <div class="nav-toggle">
+            <button onclick="toggleMenu()"><i class="fa-solid fa-ellipsis-vertical"></i></button>
         </div>
     </nav>
 
     <hr>
 
+    <div class="title-main">
+        <h1>Projects</h1>
+    </div>
+
     <div class="main-container">
         <div class="card">
-          
-            <span class="base-description"></span>
-
-        </div>
-        <div class="card">
             <div class="card-content">
-                <img src="../assets/img/who_are_you_app.png" width="370px" alt="">
+                <img src="../assets/img/who_are_you_app.png" alt="">
+            </div>
+            <h2>Lorem, ipsum.</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, laboriosam.</p>
+            <div class="card-bottom">
+                <button onclick="window.open('https://www.google.com.br', '_blank')"
+                    class="button-card-project">Link</button>
             </div>
         </div>
+
         <div class="card">
-            <img src="../assets/img/pokemon_api_app.png" width="370px" alt="">
+            <div class="card-content">
+                <img src="../assets/img/pokemon_api_app.png" alt="">
+            </div>
+            <h2>Lorem, ipsum.</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, laboriosam.</p>
+            <div class="card-bottom">
+                <button onclick="window.open('https://www.google.com.br', '_blank')"
+                    class="button-card-project">Link</button>
+            </div>
         </div>
-        <div class="card">Card 4</div>
+
+        <div class="card">
+            <div class="card-content">
+                <img src="../assets/img/who_are_you_app.png" alt="">
+            </div>
+            <h2>Lorem, ipsum.</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, laboriosam.</p>
+            <div class="card-bottom">
+                <button onclick="window.open('https://www.google.com.br', '_blank')"
+                    class="button-card-project">Link</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <img src="../assets/img/pokemon_api_app.png" alt="">
+            </div>
+            <h2>Lorem, ipsum.</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, laboriosam.</p>
+            <div class="card-bottom">
+                <button onclick="window.open('https://www.google.com.br', '_blank')"
+                    class="button-card-project">Link</button>
+            </div>
+        </div>
+
     </div>
 
 </body>
+
 </html>
