@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" href="../styles/projects.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../js/toggleMenu.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Lucas Pettinelli - Sobre</title>
 </head>
+
 <body>
-    
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="#">Lucas Pettinelli<span class="point">.</span> </a>
+        </div>
+        <div class="nav-items">
+            <ul>
+                <li><a onclick="window.location.href = '../home.html'">Home</a></li>
+                <li><a href="./assets/doc/_CURRICULO_LUCAS_WILLIAM_PETTINELLI_.pdf" download>Currículo</a></li>
+                <li><a onclick="window.location.href = '/pages/about.html'">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a onclick="window.location.href = '/pages/technologies.html'">Tecnologias</a></li>
+            </ul>
+        </div>
+        <div class="nav-toggle">
+            <button onclick="toggleMenu()"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+        </div>
+    </nav>
+
+    <hr>
+
+    <div class="title-main">
+        <h1>Sobre</h1>
+    </div>
+
+    <main class="container-about">
+
+        <div class="profile-content">
+            <img src="../assets/img/man-background-png.png" alt="">
+        </div>
+
+        <section class="profile-description">
+            <h1 class="title-profile">Lucas Pettinelli <span class="span-fullstack">Desenvolvedor Fullstack</span> e
+                Entusiasta da Tecnologia e Inovação
+            </h1>
+            <br>
+            <p>Olá, eu me chamo Lucas, tenho 28 anos com uma paixão contagiante por tecnologia e criatividade.
+                Atualmente, curso Engenharia de Software e atuo como desenvolvedor fullstack, lidando com as tecnologias
+                backend Java, frontend Angular e banco de dados MySQL.
+
+            <p>Mais do que um profissional dedicado, sou um entusiasta incansável que busca unir tecnologia e artes
+                para dar vida a soluções inovadoras de clientes. Acredito que a combinação desses mundos pode gerar
+                resultados surpreendentes e impactantes.</p>
+
+            <p> Em constante busca por desafios e aprendizado, estou sempre de portas abertas para novas oportunidades e
+                colaborações. Se você busca um profissional criativo, dedicado e apaixonado pelo que faz, vamos nos
+                conectar!</p>
+
+            <p> Juntos, podemos explorar o futuro da tecnologia e construir soluções que inspirem e façam a diferença no
+                mundo de hoje.</p>
+
+            </p>
+        </section>
+    </main>
 </body>
+
 </html>
