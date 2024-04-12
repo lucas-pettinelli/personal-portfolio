@@ -36,6 +36,7 @@
     transition: all 200ms;
 }
 
+
 .card-stacks:hover {
     transform: scale(1.05);
 }
@@ -56,7 +57,9 @@
     object-fit: cover;
     padding: 10px;
     background-color: #fff;
+ 
 }
+
 
 .stacks-description {
     width: 100%;

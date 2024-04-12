@@ -73,7 +73,7 @@ body {
 }
 
 .card {
-    background: #fff;
+    background: #ffffff6c;
     width: 360px;
     height: 640px;
     margin: 10px;
@@ -83,6 +83,8 @@ body {
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: all 200ms;
+    border: 10px solid #010101;
+    overflow: hidden;
 }
 
 .card:hover {
@@ -94,18 +96,21 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
+    border-radius: 26px 0 0 26px;
 }
 
 .card img {
-    border-radius: 24px 24px 0 24px;
-    width: 360px;
-    height: 500px;
+    width: 370px;
+    height: 400px;
+    max-width: auto;
 }
 
 h2,
-p {
+p { 
     color: #010101;
     margin: 5px 0;
+    padding: 10px;
     text-align: center;
 }
 
@@ -113,7 +118,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .button-card-project {
