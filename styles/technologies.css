@@ -15,7 +15,8 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0 30px;
+    background-color: #262727;
+    padding: 10px;
 }
 
 .card-stacks {
@@ -27,7 +28,7 @@
     width: auto;
     max-width: 300px;
     max-height: 400px;
-    background: rgba(255, 255, 255, 0.1);
+    background-color: #fff;
     border-radius: 16px;
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);

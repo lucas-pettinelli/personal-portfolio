@@ -7,34 +7,117 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
-    margin: 40px;
-    padding: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #262727;
+    padding: 20px;
 }
 
 .apresentation {
     display: flex;
     flex-direction: row;
-}
-
-.apresentation img{
-    width: 500px;
+    width: 750px;
     height: 350px;
+    max-width: 850px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+}
+
+.apresentation img {
+    width: 300px;
+    height: auto;
     border-radius: 5px;
-}
-.description-apresentaion{
-    padding: 0 40px;
+    background-color: #fff;
+    border: 2px solid #dadada;
 }
 
-.description-apresentaion h1{
+.description-apresentaion {
+    margin-left: 20px;
+}
+
+.description-apresentaion h1 {
+    text-align: center;
     margin-bottom: 10px;
-    font-size: 42px;
+    font-size: 36px;
 }
 
-.description-apresentaion p{
-    font-size: 22px;
+.description-apresentaion p {
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-items ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #262727;
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+    .nav-items ul.active {
+        display: flex;
+    }
+
+    .nav-items ul li a {
+        display: inline-flex;
+        flex-direction: column;
+        color: #fff;
+        margin: auto;
+        padding: auto;
+
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-toggle button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #fff;
+        font-size: 28px;
+    }
+
+    hr {
+        margin: auto;
+    }
+
+    .container {
+        margin-bottom: 40px;
+    }
+
+    .apresentation {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .apresentation img {
+        width: 100%;
+        height: auto;
+    }
+
+    .description-apresentaion p {
+        font-size: 16px;
+    }
+
+    .description-apresentaion h1 {
+        margin: 10px 0;
+        font-size: 32px;
+    }
+
+    .description-apresentaion {
+        margin: auto;
+    }
+
 }
